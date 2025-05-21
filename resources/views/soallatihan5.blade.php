@@ -15,15 +15,15 @@
             integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
             crossorigin="anonymous">
         <link rel="stylesheet"
-            href="soallatihan5.css">
+            href="{{ asset('soallatihan5.css') }}">
 
         <script>
                 function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     const mainContent = document.querySelector('.main-content');
-    
+
     sidebar.classList.toggle('active');
-    
+
     if (sidebar.classList.contains('active')) {
         mainContent.style.marginLeft = "0"; // Sidebar tertutup, geser ke kiri
     } else {
@@ -38,7 +38,7 @@
 
         <div class="sidebar">
             <div class="profile">
-                <img src="Frame40792-3.png" alt="User Avatar">
+                <img src="images/Frame40792-3.png" alt="User Avatar">
                 <div class="profile-info">
                     <h5>User</h5>
                     <p>user@mail.com</p>
@@ -63,7 +63,7 @@
                 <!-- Profile Container -->
                 <div class="profile-container">
                     <div class="profile-card">
-                        <img src="image-4.png" alt="Profile Picture"
+                        <img src="images/image-4.png" alt="Profile Picture"
                             class="profile-img">
                     </div>
 

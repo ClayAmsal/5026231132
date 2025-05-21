@@ -1,0 +1,187 @@
+body {
+  background-color: rgb(46, 15, 21);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Consistent width for banner and cards */
+.content-wrapper {
+  width: 100%;
+  max-width: 577px;
+}
+
+/* Banner styling */
+.banner {
+  width: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+
+.banner-container {
+  max-width: 577px;
+  width: 100%;
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.fade-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 37%;
+  background: linear-gradient(to top, rgba(46, 15, 21, 0.9), rgba(46, 15, 21, 0.9));
+  border-radius: 0 0 1rem 1rem;
+  z-index: 1;
+}
+
+.overlay-content .p-3 {
+  z-index: 2;
+}
+
+/* Tabs */
+.active-tab {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #5a4a4d;
+  color: white;
+  border: none;
+}
+
+.btn-group {
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+  max-width: 190px; 
+  margin: auto;
+}
+
+.tab-indicator {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: calc(50% - 7px); 
+  height: calc(100% - 8px);
+  background-color: #000;
+  border-radius: 999px;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.btn-group.custom-tab-group {
+  background-color: rgba(255, 255, 255, 0.4); 
+  padding: 0.25rem;
+  border-radius: 999px;
+}
+
+
+.btn-group .btn {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 50%;
+  color: #000;
+  background: transparent;
+  border: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.btn-group .btn.active-tab {
+  color: #fff;
+}
+
+
+/* Link card section */
+#links-section {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.link-card {
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Shop section */
+#shop-section {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.shop-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.shop-card {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.shop-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.shop-card a.stretched-link {
+  z-index: 2;
+}
+
+/* Card hover effect */
+.card:hover {
+  background-color: transparent !important;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  transform: translateY(-3px);
+}
+
+.card:hover .card-text {
+  color: white;
+}
+
+.card:hover,
+.card:hover * {
+  color: white !important;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}

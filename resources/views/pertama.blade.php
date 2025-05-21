@@ -2,10 +2,10 @@
     <head>
         <title>Bantu Adaptasi Mahasiswa Baru, ITS Gelar Mentoring Agama
             Islam</title>
-        
-        <link rel="stylesheet" href="mycss1.css">
+
+        <link rel="stylesheet" href="{{ asset('mycss1.css') }}">
         <style>
-        </style> 
+        </style>
     </head>
     <body>
         <h2><span style="color: rgb(2, 2, 104);">Bantu Adaptasi Mahasiswa Baru, ITS

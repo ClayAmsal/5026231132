@@ -58,6 +58,15 @@
                 return false;
             }
 
+            if (!/^\d+$/.test(nrp)) {
+                Swal.fire({
+                    title: "Kesalahan Input",
+                    text: "NRP tidak boleh huruf",
+                    icon: "error"
+                });
+                return false;
+            }
+
         }
     </script>
 </head>

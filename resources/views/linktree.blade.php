@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
             rel="stylesheet" />
-        <link rel="stylesheet" href="linktree.css" />
+        <link rel="stylesheet" href="{{ asset('linktree.css') }}" />
     </head>
     <body>
         <div class="container">
@@ -134,7 +134,7 @@
                     <a href="https://twitter.com/EASPORTSF1" target="_blank" class="mx-2 text-white fs-4"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://youtube.com/@EASPORTSF1" target="_blank" class="mx-2 text-white fs-4"><i class="bi bi-youtube"></i></a>
                   </div>
-                  
+
 
             </div>
         </div>
@@ -145,7 +145,7 @@
               const shop = document.getElementById('shop-section');
               const buttons = document.querySelectorAll('.btn-group .btn');
               const indicator = document.getElementById('tab-indicator');
-            
+
               if (tab === 'links') {
                 links.classList.remove('d-none');
                 shop.classList.add('d-none');
