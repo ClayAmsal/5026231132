@@ -25,6 +25,10 @@ Route::get('bootstrap1', function () {
 	return view('bootstrap1');
 });
 
+Route::get('ets', function () {
+	return view('index');
+});
+
 Route::get('gridcontainer', function () {
 	return view('gridcontainer');
 });

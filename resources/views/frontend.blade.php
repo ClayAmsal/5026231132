@@ -23,7 +23,7 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: 20px;
       width: 90vw;
@@ -95,11 +95,17 @@
 </head>
 <body>
   <div class="grid-container">
-    <a href="pertama" class="card-container">
-      <div class="card" style="background-image: url('images/pertamabg.png');">
-        <div class="overlay">Pertama</div>
+    <a href="ets" class="card-container">
+      <div class="card" style="background-image: url('images/etsbg.png');">
+        <div class="overlay">ETS</div>
       </div>
-      <div class="card-title">Pertama</div>
+      <div class="card-title">ETS</div>
+    </a>
+    <a href="linktree" class="card-container">
+      <div class="card" style="background-image: url('images/linktreebg.png');">
+        <div class="overlay">Linktree</div>
+      </div>
+      <div class="card-title">Linktree</div>
     </a>
     <a href="soallatihan5" class="card-container">
       <div class="card" style="background-image: url('images/soallatihan5bg.png');">
@@ -107,11 +113,11 @@
       </div>
       <div class="card-title">Soal Latihan 5</div>
     </a>
-    <a href="linktree" class="card-container">
-      <div class="card" style="background-image: url('images/linktreebg.png');">
-        <div class="overlay">Linktree</div>
+    <a href="pertama" class="card-container">
+      <div class="card" style="background-image: url('images/pertamabg.png');">
+        <div class="overlay">Pertama</div>
       </div>
-      <div class="card-title">Linktree</div>
+      <div class="card-title">Pertama</div>
     </a>
     <a href="validasi1" class="card-container">
       <div class="card" style="background-image: url('images/validasi1bg.png');">
