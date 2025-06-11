@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\BisDBController;
 // import java.io;
 
 //System.out.println("Hello World");
@@ -81,3 +82,12 @@ Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 
+//route bisDB
+Route::get('/bis', [BisDBController::class, 'indexbis']);
+Route::get('/bis/tambah', [BisDBController::class, 'tambahbis']);
+Route::post('/bis/store', [BisDBController::class, 'storebis']); //jika form dikirim, route ini akan dijalankan
+Route::get('/bis/edit/{id}',[BisDBController::class, 'editbis']);
+Route::post('/bis/update',[BisDBController::class, 'updatebis']);
+Route::get('/bis/hapus/{id}', [BisDBController::class, 'hapusbis']);
+
+Route::get('/bis/cari', [BisDBController::class, 'caribis']);
