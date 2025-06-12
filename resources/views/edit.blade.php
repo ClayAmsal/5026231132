@@ -47,7 +47,7 @@
                     <textarea required="required" name="alamat" class="form-control">{{ $p->pegawai_alamat }}</textarea> <br />
                 </div>
             </div>
-            <input type="submit" value="Simpan Data" class="btn btn-success">
+            <input type="submit" value="Simpan Data" class="btn btn-danger">
         </form>
     @endforeach
 

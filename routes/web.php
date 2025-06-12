@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BisDBController;
+use App\Http\Controllers\KaryawanDBController;
 // import java.io;
 
 //System.out.println("Hello World");
@@ -79,7 +80,6 @@ Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika for
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
-
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 
 //route bisDB
@@ -89,5 +89,11 @@ Route::post('/bis/store', [BisDBController::class, 'storebis']); //jika form dik
 Route::get('/bis/edit/{id}',[BisDBController::class, 'editbis']);
 Route::post('/bis/update',[BisDBController::class, 'updatebis']);
 Route::get('/bis/hapus/{id}', [BisDBController::class, 'hapusbis']);
-
 Route::get('/bis/cari', [BisDBController::class, 'caribis']);
+
+//route karyawanDB
+Route::get('/karyawan', [KaryawanDBController::class, 'indexkaryawan']);
+Route::get('/karyawan/tambah', [KaryawanDBController::class, 'tambahkaryawan']);
+Route::post('/karyawan/store', [KaryawanDBController::class, 'storekaryawan']); //jika form dikirim, route ini akan dijalankan
+Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapuskaryawan']);
+

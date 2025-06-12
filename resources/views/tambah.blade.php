@@ -45,7 +45,7 @@
                 <textarea name="alamat" required="required" class="form-control"></textarea> <br />
             </div>
         </div>
-        <input type="submit" value="Simpan Data" class="btn btn-success">
+        <input type="submit" value="Simpan Data" class="btn btn-danger">
     </form>
 @endsection
 

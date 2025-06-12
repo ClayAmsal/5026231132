@@ -4,12 +4,12 @@
 
     <h3>Data Pegawai</h3>
 
-    <a href="/pegawai/tambah" class="btn btn-info mb-2"> + Tambah Pegawai Baru</a>
+    <a href="/pegawai/tambah" class="btn btn-danger mb-2"> + Tambah Pegawai Baru</a>
 
     <form action="/pegawai/cari" method="GET" class="form-inline">
         <label class="form-label mr-2">Cari Data Pegawai :</label>
         <input type="text" name="cari" placeholder="Cari Pegawai .." class="form-control mr-2">
-        <input type="submit" value="CARI" class="btn btn-primary">
+        <input type="submit" value="CARI" class="btn btn-warning">
     </form>
 
     <br />
@@ -29,7 +29,7 @@
                 <td>{{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
                 <td>
-                    <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-success">Edit</a>
+                    <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
                     <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a>
                 </td>
             </tr>
