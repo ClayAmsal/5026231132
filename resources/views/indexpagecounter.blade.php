@@ -8,6 +8,8 @@
         <div class="alert alert-success px-4 py-3 mb-4 w-100" style="max-width: 100%;">
             Anda Pengunjung ke: {{ $jumlah }}
         </div>
+
+        <a href="/pagecounter/tambah" class="btn btn-danger mb-2"> + Tambah</a>
     </div>
 
 @endsection

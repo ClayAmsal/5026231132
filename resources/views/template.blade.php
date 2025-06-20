@@ -63,6 +63,7 @@
             background-color: #ffffff;
         }
     </style>
+    @yield('style')
 </head>
 
 <body class="bg-light">
@@ -76,7 +77,7 @@
         <nav class="navbar navbar-expand-sm bg-white">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">All Front End</a>
+                    <a class="nav-link" href="/frontend">All Front End</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/pegawai">Pegawai</a>
@@ -85,7 +86,7 @@
                     <a class="nav-link" href="/bis">Tugas CRUD</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">EAS</a>
+                    <a class="nav-link" href="/eas">EAS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/pagecounter">Latihan 1</a>
@@ -96,6 +97,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/karyawan">Latihan 3</a>
                 </li>
+                {{-- <li class="nav-item">
+                    <a class="nav-link" href="/chat">CHAT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/kategori">Kategori</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/keranjangbelanja">Keranjang</a>
+                </li> --}}
             </ul>
         </nav>
 

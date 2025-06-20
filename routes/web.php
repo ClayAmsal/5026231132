@@ -8,6 +8,11 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BisDBController;
 use App\Http\Controllers\KaryawanDBController;
 use App\Http\Controllers\PageCounterDBController;
+use App\Http\Controllers\ChatDBController;
+use App\Http\Controllers\KategoriDBController;
+use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\NewKaryawanDBController;
+
 // import java.io;
 
 //System.out.println("Hello World");
@@ -32,7 +37,7 @@ Route::get('bootstrap1', function () {
 });
 
 Route::get('ets', function () {
-	return view('index');
+	return view('index1');
 });
 
 Route::get('gridcontainer', function () {
@@ -99,3 +104,20 @@ Route::post('/karyawan/store', [KaryawanDBController::class, 'storekaryawan']); 
 Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapuskaryawan']);
 
 Route::get('/pagecounter', [PageCounterDBController::class, 'index']);
+Route::get('/pagecounter/tambah', [PageCounterDBController::class, 'tambah']);
+
+Route::get('/chat', [ChatDBController::class, 'indexchat']);
+
+Route::get('/kategori', [KategoriDBController::class, 'indexkategori']);
+Route::post('/kategori/hasil', [KategoriDBController::class, 'hasilkategori']);
+
+Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'indexkeranjangbelanja']);
+Route::get('/keranjangbelanja/belikeranjangbelanja/{id}', [KeranjangBelanjaController::class, 'belikeranjangbelanja']);
+Route::get('/keranjangbelanja/batalkeranjangbelanja/{id}', [KeranjangBelanjaController::class, 'batalkeranjangbelanja']);
+Route::post('/keranjangbelanja/storekeranjangbelanja', [KeranjangBelanjaController::class, 'storekeranjangbelanja']);
+Route::post('/keranjangbelanja/updatekeranjangbelanja', [KeranjangBelanjaController::class, 'updatekeranjangbelanja']);
+
+Route::get('/eas', [NewKaryawanDBController::class, 'indexnewkaryawan']);
+Route::get('/eas/tambah', [NewKaryawanDBController::class, 'tambahnewkaryawan']);
+Route::post('/eas/store', [NewKaryawanDBController::class, 'storenewkaryawan']);
+Route::get('/eas/hapus/{id}', [NewKaryawanDBController::class, 'hapusnewkaryawan']);

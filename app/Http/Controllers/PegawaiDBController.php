@@ -26,7 +26,25 @@ class PegawaiDBController extends Controller
     // method untuk insert data ke table pegawai
 public function store(Request $request)
 {
-	// insert data ke table pegawai
+
+    // $request->validate([
+    // 		'id' => 'required|unique:karyawan,id',
+    // 		'nama' => 'required'
+	// 	], [
+    // 		'id.required' => 'ID harus diisi.',
+    // 		'id.unique' => 'ID sudah digunakan, silakan gunakan ID lain.',
+    // 		'nama.required' => 'Nama karyawan wajib diisi.'
+	// ]);
+
+    //     DB::table('karyawan')->insert([
+    //         'id' => $request->id,
+    //         'nama' => $request->nama
+    //     ]);
+
+    //     return redirect('/karyawan/tambah')->with('success', 'Data berhasil disimpan!');
+
+
+    // insert data ke table pegawai
 	DB::table('pegawai')->insert([
 		'pegawai_nama' => $request->nama,
 		'pegawai_jabatan' => $request->jabatan,
